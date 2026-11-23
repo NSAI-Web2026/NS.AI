@@ -1,54 +1,56 @@
-# NS.AI — Web
+# 🌌 Phronesis.IA
+### PLUS QU'UNE IA • UNE VISION
 
-Version web Streamlit de NS.AI.
+Bienvenue sur **Phronesis.IA**, ton assistant intelligent nouvelle génération.
 
-## Fonctionnalités
+Phronesis.IA a pour objectif de rendre l'intelligence artificielle accessible, intuitive et performante.
 
-- Chat IA
-- Mode automatique / rapide / complexe
-- Recherche Web avec Google Search grounding
-- Analyse d'images envoyées par l'utilisateur
-- Analyse de PDF, TXT, MD, CSV et DOCX
-- Quotas locaux + coupe-circuit serveur
-- Aucune génération d'images ou de vidéos
-- Aucune clé API demandée à l'utilisateur
-- Secrets conservés côté serveur
+## ✨ Fonctionnalités
 
-## Configuration locale
+- 💬 Assistant conversationnel intelligent
+- 🧠 Mode normal et tâches complexes
+- 🌐 Recherche sur Internet avec Google Search
+- 📄 Analyse de fichiers PDF, TXT, MD, CSV et DOCX
+- 🖼️ Analyse d'images envoyées par l'utilisateur
+- 🌍 Prise en charge de nombreuses langues
+- 🔒 Protection des clés API côté serveur
+- ⚡ Interface moderne avec Streamlit
 
-Créer `.streamlit/secrets.toml` :
+## 🛠️ Technologies
+
+- Python
+- Streamlit
+- Google Gemini 2.5 Flash
+- Google Gemini 2.5 Pro
+
+## ⚙️ Configuration
+
+Ajouter la clé API Gemini dans les Secrets de Streamlit :
 
 ```toml
-GEMINI_API_KEY = "TA_CLE_ICI"
-NSAI_MODEL = "gemini-2.5-flash"
-NSAI_COMPLEX_MODEL = "gemini-2.5-pro"
-NSAI_DAILY_LIMIT = 20
-NSAI_COMPLEX_LIMIT = 5
-NSAI_SEARCH_LIMIT = 8
-NSAI_SERVER_DAILY_LIMIT = 1000
+GEMINI_API_KEY = "VOTRE_CLE_API"
 ```
 
-Ne publie jamais ce fichier dans GitHub.
+Ne partagez jamais votre clé API publiquement.
 
-Lancer :
+## 🚀 Installation locale
+
+Installer les dépendances :
 
 ```bash
 pip install -r requirements.txt
+```
+
+Lancer l'application :
+
+```bash
 streamlit run app.py
 ```
 
-## Publication
+## 💎 Phronesis.IA
 
-Sur Streamlit Community Cloud, mettre `app.py`, `requirements.txt` et `NS_AI_LOGO.png`
-dans un dépôt GitHub. Ajouter `GEMINI_API_KEY` dans les Secrets de l'application,
-pas dans le code.
+**Plus qu'une IA, une vision.**
 
-## Important
+Une tâche simple ? Un défi complexe ?
 
-Cette version protège les secrets en ne les affichant jamais dans l'interface.
-Les quotas de `session_state` sont adaptés au prototype, mais pour un service
-public à grande échelle il faudra une authentification et une base de données
-distante pour imposer des quotas réellement par utilisateur.
-
-NS.AI+ est uniquement préparé dans l'interface : aucun paiement réel n'est
-activé dans cette version.
+Phronesis.IA est là pour vous accompagner.
